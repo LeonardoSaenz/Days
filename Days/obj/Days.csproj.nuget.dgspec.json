@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\Days\\Days\\Days.csproj": {}
+    "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\Days\\Days\\Days.csproj": {
+    "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Days\\Days\\Days.csproj",
+        "projectUniqueName": "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj",
         "projectName": "Days",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Days\\Days\\Days.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Days\\Days\\obj\\",
+        "projectPath": "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj",
+        "packagesPath": "C:\\Users\\amigo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
@@ -83,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
