@@ -10,7 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './paginas/login/login.component';
-import { RegistrationComponent } from './paginas/registration/registration.component';
+import { AccountService } from './account/account.service';
+import { AuthInterceptorService } from './services/auth-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,12 @@ import { RegistrationComponent } from './paginas/registration/registration.compo
     CounterComponent,
     FetchDataComponent,
     LoginComponent,
-    RegistrationComponent
+    AccountService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      userClass: AuthInterceptorService,
+      multi: true
+    }
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -31,7 +37,6 @@ import { RegistrationComponent } from './paginas/registration/registration.compo
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'registration', component: RegistrationComponent },
     ])
   ],
   providers: [],

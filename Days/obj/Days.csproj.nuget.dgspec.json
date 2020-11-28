@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj": {}
+    "C:\\Users\\Saberob\\source\\repos\\Days\\Days\\Days.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj": {
+    "C:\\Users\\Saberob\\source\\repos\\Days\\Days\\Days.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj",
+        "projectUniqueName": "C:\\Users\\Saberob\\source\\repos\\Days\\Days\\Days.csproj",
         "projectName": "Days",
-        "projectPath": "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\Days.csproj",
-        "packagesPath": "C:\\Users\\amigo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amigo\\Documents\\Documentos FCFM\\5to Semestre\\Lenguajes Modernos de Programación\\Examen2\\Days\\obj\\",
+        "projectPath": "C:\\Users\\Saberob\\source\\repos\\Days\\Days\\Days.csproj",
+        "packagesPath": "C:\\Users\\Saberob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Saberob\\source\\repos\\Days\\Days\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Saberob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,7 +38,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[3.1.8, )"
@@ -55,6 +65,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.IdentityModel.Clients.ActiveDirectory": {
+              "target": "Package",
+              "version": "[5.2.8, )"
             },
             "Microsoft.TypeScript.MSBuild": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -81,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

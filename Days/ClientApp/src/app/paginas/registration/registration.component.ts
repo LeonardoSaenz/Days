@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AccountService } from '../../account/account.service';
+import { IUserInfo } from '../../account/user-info';
 
 
 interface IPerfil {
@@ -13,21 +16,23 @@ interface IPerfil {
 @Component({
   selector: 'registration-app',
   templateUrl: './registration.component.html',
-  styleUrls:['./registration.component.css']
+  styleUrls: ['./registration.component.css']
 })
 
-export class RegistrationComponent implements OnInit{
-  public nombre = "Leo"
-  email;
-  password;
-  confirmPassword: string;
+export class RegistrationComponent implements OnInit {
 
-  constructor() {}
+  constructor(private accountService: AccountService, private router: Router) { }
 
   perfil: IPerfil;
 
   ngOnInit() {
     this.perfil = <IPerfil>{};
+  }
+
+  
+
+  register() {
+
   }
 
 
