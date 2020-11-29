@@ -37,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\account\user-info.ts" />
     <None Remove="ClientApp\src\app\paginas\login\login.component.ts" />
     <None Remove="ClientApp\src\app\paginas\registration\registration.component.ts" />
   </ItemGroup>
