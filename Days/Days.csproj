@@ -13,6 +13,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
@@ -20,6 +22,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
     <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -29,23 +32,39 @@
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\src\app\new-component\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\src\app\new-component\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\paginas\login\login.component.ts" />
-    <None Remove="ClientApp\src\app\paginas\registration\registration.component.ts" />
+<<<<<<< HEAD
+    <None Remove="ClientApp\src\app\account\user-info.ts" />
+=======
+    <Compile Remove="ClientApp\src\app\new-component\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\new-component\**" />
+    <TypeScriptCompile Remove="ClientApp\src\app\new-component\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\app\paginas\login\login.component.ts" />
+    <None Remove="ClientApp\src\app\new-component\new-component.component.css" />
+    <None Remove="ClientApp\src\app\new-component\new-component.component.html" />
+    <None Remove="ClientApp\src\app\new-component\new-component.component.spec.ts" />
+    <None Remove="ClientApp\src\app\new-component\new-component.component.ts" />
+>>>>>>> 3611f618e573ed87d3e7be7279c28745f30e6aa9
+    <None Remove="ClientApp\src\app\paginas\login\login.component.ts" />
+    <None Remove="ClientApp\src\app\paginas\registration\registration.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Update="ClientApp\src\app\paginas\registration\registration.component.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\paginas\login\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

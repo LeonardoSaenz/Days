@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace Days.Controllers
 {
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
